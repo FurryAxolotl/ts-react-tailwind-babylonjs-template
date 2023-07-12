@@ -4,9 +4,11 @@ import "pepjs";
 import SceneComponent from "babylonjs-hook";
 
 export default function App() {
+	// declare any variables required to be updated regularly
 	let box;
 	
 	function onSceneReady(scene: BABYLON.Scene) {
+		// create scene items here.
 		const canvas = scene.getEngine().getRenderingCanvas();
 
 		const camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2.5, 3, BABYLON.Vector3.Zero(), scene);
@@ -18,6 +20,7 @@ export default function App() {
 	}
 
 	function onRender(scene: BABYLON.Scene) {
+		// update your scene here
 		const deltaTimeInMillis = scene.getEngine().getDeltaTime();
 
 		const rpm = 10;
