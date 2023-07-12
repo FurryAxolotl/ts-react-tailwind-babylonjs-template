@@ -18,7 +18,7 @@ Create a production build of your project using ```npm run build``` in the termi
 ### /index.html
 Root .html file of your project.
 
-### /public (Not included)
+### /public
 All images or assets are stored here. Note that the files and folders in this directory will be served to the root.
 
 ### /src
